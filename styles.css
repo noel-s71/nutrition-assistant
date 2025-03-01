@@ -215,9 +215,9 @@ section{
 
 }
 .services-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 columns */
-    gap: 10px;  /* Space between items */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 .box{
     height: 100%;
@@ -318,7 +318,7 @@ footer {
         padding: 1em 3em;
         color:white;
         display:flex;
-        flex-direction: column;
+        flex-direction:row;
         text-align: center;
         background-color: black;
 
@@ -374,9 +374,22 @@ footer {
     }
     #contact.header{
         font-size: 3em;
-}
-#contact.input-box span{
-             font-size: 1.2em;
+       
+        
+        }
+        .box p{
+            opacity:0.8;
+        
+        }
+        .box h1{
+            font-size: 2em;
+            min-width: 25px;
+            border-radius: 0.5em;
+        
+        }
+        .box img{
+            min-width: 25px;
+            border-radius: 0.3em; 
 
 }
 .input-box input{
@@ -389,7 +402,8 @@ footer{
     
 }
      
-}
+    }
+
 
   
 
