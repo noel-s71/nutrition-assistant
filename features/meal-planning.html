@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Manager & Nutrition Tracker - Meal Planning</title>
+  <link rel="stylesheet" href="meal-planning.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Meal Planning & Shopping List</h1>
+
+    <!-- Meal planning form -->
+    <div id="meal-planning">
+      <h2>Plan Your Meals</h2>
+
+      <label for="meal-day">Select Day:</label>
+      <select id="meal-day">
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+        <option value="saturday">Saturday</option>
+        <option value="sunday">Sunday</option>
+      </select>
+
+      <label for="meal-type">Meal Type:</label>
+      <select id="meal-type">
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+        <option value="snack">Snack</option>
+      </select>
+
+      <label for="meal-food">Select Food:</label>
+      <select id="meal-food">
+        <!-- Options will be populated with food items -->
+      </select>
+
+      <button id="add-meal-btn">Add Meal</button>
+    </div>
+
+    <!-- Meal Plan Display -->
+    <div id="meal-plan-summary">
+      <h2>Your Meal Plan</h2>
+      <ul id="meal-plan-list"></ul>
+    </div>
+
+    <!-- Shopping List -->
+    <div id="shopping-list-summary">
+      <h2>Shopping List</h2>
+      <ul id="shopping-list"></ul>
+      <button id="generate-shopping-list-btn">Generate Shopping List</button>
+    </div>
+  </div>
+
+  <script src="meal-planning.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Diary</title>
+  <link rel="stylesheet" href="food-diary.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Food Diary</h1>
+    <form id="food-form">
+      <label for="food-name">Food Item:</label>
+      <input type="text" id="food-name" required>
+
+      <label for="quantity">Quantity (grams):</label>
+      <input type="number" id="quantity" required>
+
+      <label for="food-type">Food Type:</label>
+      <select id="food-type">
+        <option value="fruit">Fruit</option>
+        <option value="vegetable">Vegetable</option>
+        <option value="protein">Protein</option>
+        <option value="grain">Grain</option>
+        <option value="dairy">Dairy</option>
+      </select>
+
+      <button type="submit">Add Food</button>
+    </form>
+
+    <div id="food-log">
+      <h2>Food Log</h2>
+      <ul id="log-list"></ul>
+    </div>
+
+    <div id="summary">
+      <h2>Nutrition Summary</h2>
+      <p id="calories">Total Calories: 0 kcal</p>
+      <p id="carbs">Carbohydrates: 0g</p>
+      <p id="proteins">Proteins: 0g</p>
+      <p id="fats">Fats: 0g</p>
+    </div>
+  </div>
+
+  <script src="food-diary.js"></script>
+</body>
+</html>

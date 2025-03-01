@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Manager & Nutrition Tracker - Reminders</title>
+  <link rel="stylesheet" href="reminders.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Set Reminders for Meals and Water Intake</h1>
+
+    <!-- Reminder Setting Form -->
+    <div id="reminder-form">
+      <h2>Set Your Reminders</h2>
+
+      <label for="meal-time">Meal Reminder Time (hh:mm):</label>
+      <input type="time" id="meal-time" required>
+
+      <label for="water-time">Water Intake Reminder Time (hh:mm):</label>
+      <input type="time" id="water-time" required>
+
+      <button id="set-reminders-btn">Set Reminders</button>
+    </div>
+
+    <!-- Reminder Summary -->
+    <div id="reminder-summary">
+      <h2>Your Set Reminders</h2>
+      <ul id="reminder-list">
+        <!-- Reminders will be listed here -->
+      </ul>
+      <button id="clear-reminders-btn">Clear All Reminders</button>
+    </div>
+  </div>
+
+  <script src="reminders.js"></script>
+</body>
+</html>
